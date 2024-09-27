@@ -22,7 +22,7 @@ img {
 }
 
 /* Header Style Rules */
-header h1{
+.page-header {
 	float: right;
 	margin: 2em 10em 2em 0;
 	width: 40%;
@@ -31,9 +31,10 @@ header h1{
 }
 /* remember for margin, top, left, bottom, right */
 
-header img {
+.page-logo {
 	float: left;
 	width: 15%;
+	color: #134272;
 }
 
 /* Nav Style Rules */
