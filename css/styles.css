@@ -1,1 +1,114 @@
+/*
+Author: Gabriel Lordi-Vado
+Date: 9/14/2024
+File Name: styles.css
+*/
 
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h2 {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* Body and Misc Style Rules */
+body {
+	background-color: #def5f2;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+/* Header Style Rules */
+header h1{
+	float: right;
+	margin: 2em 10em 2em 0;
+	width: 40%;
+	color: #134272;
+}
+/* remember for margin, top, left, bottom, right */
+
+header img {
+	float: left;
+	width: 15%;
+}
+
+/* Nav Style Rules */
+nav {
+	background-color: #134272;
+	clear: both;
+	border: 10px solid #fff;
+	border-bottom-style: none;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	text-align: center;
+}
+
+nav li {
+	display: inline-block;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+nav li a {
+	display: block;
+	color: #fff;
+	padding: 0.5em 0.5em;
+	text-decoration: none;
+}
+
+/* Banner Style Rules */
+.hero {
+	margin: 0em;
+	border: 10px solid #fff;
+}
+
+/* Main Content Style Rules */
+main {
+	padding: 1.5%;
+	overflow: auto;
+	background-color: #fff;
+}
+
+main p {
+	font-size: 1.25em;
+}
+
+.map {
+	border: 10px solid #134272;
+}
+
+#about-img {
+	float: right;
+	width: 40%;
+	margin: 0em 0.5em 0.5em;
+	text-align: center;
+	color: #134272;
+	font-weight: bold;
+}
+
+#about-txt {
+	padding: 20.5em 0em;
+	text-align: center;
+	background-color: #134272;
+	margin: 0.5em 35em 0em 0em;
+	overflow: hidden;
+	color: #fff;
+}
+
+footer {
+	clear: right;
+	text-align: center;
+	font-size: 0.65em;
+	padding: 0.5% 0%;
+}
+
+footer a {
+	text-decoration: none;
+	color: #134272;
+}
