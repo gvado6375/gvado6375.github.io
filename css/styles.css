@@ -1,6 +1,6 @@
 /*
 Author: Gabriel Lordi-Vado
-Date: 9/14/2024
+Date: 9/27/2024
 File Name: styles.css
 */
 
@@ -13,7 +13,7 @@ body, header, nav, main, footer, img, h1, h2 {
 
 /* Body and Misc Style Rules */
 body {
-	background-color: #def5f2;
+	background-color: #a9dea9;
 }
 
 img {
@@ -22,25 +22,40 @@ img {
 }
 
 /* Header Style Rules */
-header h1 {
+.page-header {
 	float: right;
-	margin: 2em 10em 2em 0;
+	margin: 1.5em auto 0.5em auto;
 	width: 40%;
-	color: #134272;
+	color: #325b32;
 	text-align: center;
+	font-family: "Bebas Neue", system-ui;
+	font-size: 2.5em;
 }
 /* remember for margin, top, left, bottom, right */
 
-header img {
+.page-logo {
 	float: left;
-	width: 20%;
+	display: block;
+	margin: 1.1em 1em;
+	color: #325b32;
+	font-size: 3em;
+	font-family: "Bebas Neue", system-ui;
+}
+
+.page-logo:hover {
+	background-color: #2f6f5e;
+	color: #ebeceb;
+	border: 2px solid #2f6f5e;
+	margin: 1em 1em 1.01em 1em;
+	padding: 0.1em 0 0;
+	border-radius: 10px;
 }
 
 /* Nav Style Rules */
 nav {
-	background-color: #134272;
+	background-color: #2f6f5e;
 	clear: both;
-	border: 10px solid #fff;
+	border: 10px solid #ebeceb;
 	border-bottom-style: none;
 }
 
@@ -48,41 +63,62 @@ nav ul {
 	list-style: none;
 	margin: 0;
 	text-align: center;
+	padding: 0;
 }
 
 nav li {
 	display: inline-block;
 	font-size: 2em;
 	font-weight: bold;
+	border-right: 10px solid #ebeceb;
+	font-family: "Bebas Neue", system-ui;
+}
+
+nav li:last-child {
+	border-right: none;
 }
 
 nav li a {
 	display: block;
-	color: #fff;
+	color: #ebeceb;
 	padding: 0.5em 0.5em;
 	text-decoration: none;
 }
 
 nav li a:hover {
-	background-color: #b7d6e7;
-	color: #134272;
+	background-color: #a9dea9;
+	color: #325b32;
+}
+
+/* Band-aid fix, hopefully theres a better way to make homepage nav look nice */
+#homepage li {
+	font-size: 1.5em;
 }
 
 /* Banner Style Rules */
 .hero {
 	margin: 0em;
-	border: 10px solid #fff;
+	border: 10px solid #ebeceb;
 }
 
 /* Main Content Style Rules */
 main {
 	padding: 1.5%;
 	overflow: auto;
-	background-color: #fff;
+	background-color: #ebeceb;
 }
 
 main p {
 	font-size: 1.25em;
+	text-align: center;
+	font-family: "Playwrite DE Grund", cursive;
+}
+
+#course-name {
+	font-weight: bold;
+	font-family: sans-serif, serif;
+	font-size: 1.5em;
+	color: #2f6f5e;
 }
 
 footer {
@@ -95,4 +131,112 @@ footer {
 footer a {
 	text-decoration: none;
 	color: #134272;
+}
+
+/* Large Desktop Media Query */
+@media screen and (min-width: 1921px) {
+	
+	body {
+		width: 1920px;
+		margin: 0 auto;
+	}
+	
+}
+
+/* Tablet Media Query */
+@media screen and (max-width: 768px), print {
+	
+	/* Header Style Rules for Tablets */
+	.page-header {
+		margin: 1.5em 0.5em 0.5em auto;
+	}
+	
+	.page-logo:hover {
+		border: none;
+		margin: 1em 1em 1.1em 1em;
+		color: #325b32;
+		background-color: #a9dea9;
+	}
+		
+	/* Nav Style Rules for Tablets */
+	nav {
+		font-size: 0.85em;
+	}
+	
+	nav li {
+		border: none;	
+	}
+		
+	nav li a:hover {
+		background-color: #2f6f5e;
+		color: #ebeceb;
+	}
+	
+	/*
+	Mobile Query Check
+	body {
+		background-color: #000;
+	}
+	*/
+}
+
+/* Mobile Media Query */
+@media screen and (max-width: 480px), print {
+	
+	/* Hiding desktop/tablet content, showing mobile content */
+	.mobile {
+		display: block;
+	}
+	
+	.desktop {
+		display: none;
+	}
+	
+	/* Header Style Rules for Mobile */
+	.page-header {
+		margin: auto auto 1em auto;
+		display: block;
+		float: none;
+	}
+	
+	.page-logo {
+		float: none;
+		text-align: center;
+	}
+	
+	/* Nav Style Rules for Mobile */
+	nav li {
+		display: block;
+		border-top: 10px solid #ebeceb;
+	}
+	
+	nav {
+		font-size: 0.95em;
+	}
+	
+	
+	/*
+	Mobile Query Check
+	body {
+		background-color: #fff;
+	}
+	*/
+}
+
+/* Print Media Query */
+@media print {
+	
+	body {
+		background-color: #fff;
+		color: #000;
+	}
+	
+	.page-header {
+		color: #000;
+	}
+	
+	.page-logo {
+		color: #000;
+	}
+	
 }

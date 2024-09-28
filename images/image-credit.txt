@@ -1,4 +1,20 @@
 Index banner:
 https://unsplash.com/photos/a-close-up-of-a-sign-with-the-word-hello-hello-jxelyjTrWFg
+
 Generic banner:
 https://unsplash.com/photos/digital-code-number-abstract-background-represent-coding-technology-and-programming-languages-D6P8FNyZxx4
+
+Template banner:
+https://unsplash.com/photos/a-computer-monitor-with-a-blue-screen-on-it-Fet-6OI_4wo
+
+Links banner:
+https://unsplash.com/photos/a-green-word-that-is-on-top-of-a-black-background-IqsimbLh3wM
+
+css banner:
+https://unsplash.com/photos/a-computer-screen-with-an-arrow-pointing-to-it-CHfHlwMLiZY
+
+Responsive banner:
+https://unsplash.com/photos/a-close-up-of-a-person-holding-a-cell-phone-7TnTV3MzcQk
+
+Responsive 2 banner:
+https://unsplash.com/photos/turned-on-flat-screen-monitor-0qvBNep1Y04
