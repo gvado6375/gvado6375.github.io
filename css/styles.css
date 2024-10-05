@@ -21,6 +21,10 @@ img {
 	display: block;
 }
 
+* {
+	box-sizing: border-box;
+}
+
 /* Header Style Rules */
 .page-header {
 	float: right;
@@ -30,6 +34,7 @@ img {
 	text-align: center;
 	font-family: "Bebas Neue", system-ui;
 	font-size: 2.5em;
+	text-shadow: 3px 3px 8px #48af89;
 }
 /* remember for margin, top, left, bottom, right */
 
@@ -40,6 +45,7 @@ img {
 	color: #325b32;
 	font-size: 3em;
 	font-family: "Bebas Neue", system-ui;
+	text-shadow: 3px 3px 8px #48af89;
 }
 
 .page-logo:hover {
@@ -49,6 +55,7 @@ img {
 	margin: 1em 1em 1.01em 1em;
 	padding: 0.1em 0 0;
 	border-radius: 10px;
+	text-shadow: none;
 }
 
 /* Nav Style Rules */
@@ -68,7 +75,7 @@ nav ul {
 
 nav li {
 	display: inline-block;
-	font-size: 2em;
+	font-size: 1.5em;
 	font-weight: bold;
 	border-right: 10px solid #ebeceb;
 	font-family: "Bebas Neue", system-ui;
@@ -90,11 +97,6 @@ nav li a:hover {
 	color: #325b32;
 }
 
-/* Band-aid fix, hopefully theres a better way to make homepage nav look nice */
-#homepage li {
-	font-size: 1.5em;
-}
-
 /* Banner Style Rules */
 .hero {
 	margin: 0em;
@@ -110,7 +112,7 @@ main {
 
 main p {
 	font-size: 1.25em;
-	text-align: center;
+	text-align: center; 
 	font-family: "Playwrite DE Grund", cursive;
 }
 
@@ -120,6 +122,47 @@ main p {
 	font-size: 1.5em;
 	color: #2f6f5e;
 }
+
+aside {
+	grid-column: 1 / span 3;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+
+.grid div {
+	margin: 2% auto;
+}
+
+.grid div a {
+	text-decoration: none;
+	font-size: 2.5em;
+	color: #ebeceb;
+	font-weight: bold;
+	font-family: "Bebas Neue", system-ui;
+}
+
+.grid div h2 {
+	background-color: #2f6f5e;
+	padding: 0.5em;
+	border-radius: 10px;
+}
+
+.grid div:hover {
+	box-shadow: 0px 0px 15px #000;
+}
+
+/* Get buttons to stop moving footer 
+
+.grid div a:hover {
+	font-size: 2.6em;
+}
+
+*/
+
+/* Footer Style Rules */
 
 footer {
 	clear: right;
@@ -156,6 +199,7 @@ footer a {
 		margin: 1em 1em 1.1em 1em;
 		color: #325b32;
 		background-color: #a9dea9;
+		text-shadow: 3px 3px 8px #48af89;
 	}
 		
 	/* Nav Style Rules for Tablets */
@@ -172,8 +216,17 @@ footer a {
 		color: #ebeceb;
 	}
 	
+	/* Main Style Rules for Tablets */
+	.grid div a {
+	font-size: 1.8em;
+	}
+	
+	.grid div:hover {
+	box-shadow: none;
+	}
+	
 	/*
-	Mobile Query Check
+	Tablet Query Check
 	body {
 		background-color: #000;
 	}
@@ -214,6 +267,22 @@ footer a {
 		font-size: 0.95em;
 	}
 	
+	/* Main Style Rules for Mobile */
+	aside {
+		grid-column: 1 / span 1;
+	}
+	
+	.grid {
+		grid-template-columns: auto;
+	}
+	
+	.grid div {
+		margin: 2.5% auto;
+	}
+	
+	.grid div h2 {
+		padding: 0.25em 2em;
+	}
 	
 	/*
 	Mobile Query Check
