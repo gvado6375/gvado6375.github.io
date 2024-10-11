@@ -138,16 +138,19 @@ aside {
 
 .grid div a {
 	text-decoration: none;
-	font-size: 2.5em;
+	font-size: 2em;
 	color: #ebeceb;
 	font-weight: bold;
 	font-family: "Bebas Neue", system-ui;
+	text-align: center;
 }
 
 .grid div h2 {
 	background-color: #2f6f5e;
 	padding: 0.5em;
 	border-radius: 10px;
+	width: 4.5em;
+	overflow: hidden;
 }
 
 .grid div:hover {
@@ -167,7 +170,7 @@ aside {
 footer {
 	clear: right;
 	text-align: center;
-	font-size: 0.65em;
+	font-size: 1em;
 	padding: 0.5% 0%;
 }
 
@@ -218,11 +221,22 @@ footer a {
 	
 	/* Main Style Rules for Tablets */
 	.grid div a {
-	font-size: 1.8em;
+	font-size: 1.6em;
+	}
+	
+	.grid div h2 {
+		width: 4em;
+		padding: 0.8em;
 	}
 	
 	.grid div:hover {
 	box-shadow: none;
+	}
+	
+	/* Footer Style Rules for Tablets */
+	
+	footer {
+		font-size: 0.85em;
 	}
 	
 	/*
@@ -280,8 +294,12 @@ footer a {
 		margin: 2.5% auto;
 	}
 	
+	.grid div a {
+		font-size: 1.5em;
+	}
+	
 	.grid div h2 {
-		padding: 0.25em 2em;
+		width: 8em;
 	}
 	
 	/*
