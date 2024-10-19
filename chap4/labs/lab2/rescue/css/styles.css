@@ -95,3 +95,21 @@ footer a {
 	color: #f3e6d8;
 	text-decoration: none;
 }
+
+/* Return Button for Homepage */
+
+footer .return {
+	display: inline-block;
+	float: left;
+	margin-left: 2em;
+	margin-top: 0em;
+	background-color: #325b32;
+	color: #fff;
+	font-size: 0.9em;
+	padding: 1em;
+	border-radius: 10px;
+}
+
+.return:hover {
+	box-shadow: 3px 3px 2px #48af89;
+}
