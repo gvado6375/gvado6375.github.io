@@ -172,6 +172,10 @@ footer a {
 	text-decoration: none;
 }
 
+footer .return {
+	display: none;
+}
+
 /* Media Query for Tablet Viewport */
 @media screen and (min-width: 550px), print {
 	
@@ -265,6 +269,24 @@ footer a {
 		width: 29%;
 		float: left;
 		margin: 0 2%;
+	}
+	
+	/* Return Button for Homepage */
+
+	footer .return {
+		display: inline-block;
+		float: left;
+		margin-left: 2em;
+		margin-top: 0em;
+		background-color: #325b32;
+		color: #fff;
+		font-size: 1em;
+		padding: 1em;
+		border-radius: 10px;
+	}
+
+	.return:hover {
+		box-shadow: 3px 3px 2px #48af89;
 	}
 }
 
