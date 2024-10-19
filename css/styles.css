@@ -5,7 +5,7 @@ File Name: styles.css
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, img, h1, h2 {
+body, header, nav, main, footer, img, h1, h2, article, section, figure, figcaption {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -116,6 +116,45 @@ main p {
 	font-family: "Playwrite DE Grund", cursive;
 }
 
+main img {
+	margin: auto;
+}
+
+main article {
+	display: block;
+}
+
+article figure {
+	width: 40%;
+	margin: 1em;
+	border: 10px ridge #2f6f5e;
+	display: inline-block;
+}
+
+article section {
+	width: 50%;
+	margin: 1em;
+	border: 10px dotted #2f6f5e;
+	padding: 2.5em;
+	display: inline-block;
+	float: right;
+	background-color: #a9dea9;
+	border-radius: 10px;
+}
+
+article section h2, p {
+	text-align: center;
+}
+
+article section h2 {
+	font-family: "Bebas Neue", system-ui;
+	font-size: 2em;
+}
+
+article section p {
+	font-size: 1.2em;
+}
+
 #course-name {
 	font-weight: bold;
 	font-family: sans-serif, serif;
@@ -220,6 +259,18 @@ footer a {
 	}
 	
 	/* Main Style Rules for Tablets */
+	article section {
+		width: 45%;
+	}
+	
+	article section h2 {
+		font-size: 1.5em;
+	}
+	
+	article section p {
+		font-size: 0.8em;
+	}
+	
 	.grid div a {
 	font-size: 1.6em;
 	}
@@ -282,6 +333,27 @@ footer a {
 	}
 	
 	/* Main Style Rules for Mobile */
+	article figure {
+		display: block;
+		width: 90%;
+		margin: auto;
+	}
+	
+	article section {
+		float: none;
+		width: 90%;
+		margin: 1em auto;
+		display: block;
+	}
+	
+	article section h2 {
+		font-size: 2em;
+	}
+	
+	article section p {
+		font-size: 1em;
+	}
+	
 	aside {
 		grid-column: 1 / span 1;
 	}
