@@ -133,6 +133,7 @@ article figure {
 
 article section {
 	width: 50%;
+	height: 31.5em;
 	margin: 1em;
 	border: 10px dotted #2f6f5e;
 	padding: 2.5em;
@@ -153,6 +154,59 @@ article section h2 {
 
 article section p {
 	font-size: 1.2em;
+}
+
+form {
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 5em;
+	background-color: #a9dea9;
+	border: 5px solid #2f6f5e;
+	overflow: scroll;
+}
+
+fieldset {
+	border: 0;
+}
+
+legend {
+	font-family: "Bebas Neue", system-ui;
+	color: #2f6f5e;
+	font-size: 3em;
+	margin:auto;
+	margin-top: 0.5em;
+	border-bottom: 5px dashed #2f6f5e;
+}
+
+label, input {
+	display: block;
+	margin: 0.5em 0;
+}
+
+label {
+	font-family: "Playwrite DE Grund", cursive;
+	font-size: 0.9em;
+	text-align: center;
+	font-weight: bold;
+}
+
+input {
+	margin: auto;
+}
+
+#submit {
+	background-color: #2f6f5e;
+	padding: 0.5em;
+	margin: 0.5em auto;
+	border: none;
+	font-family: "Bebas Neue", system-ui;
+	color: #ebeceb;
+	font-size: 1.5em;
+	border-radius: 15px;
+}
+
+#submit:hover {
+	box-shadow: 0px 3px 2px #48af89;
 }
 
 #course-name {
@@ -260,7 +314,9 @@ footer a {
 	
 	/* Main Style Rules for Tablets */
 	article section {
-		width: 45%;
+		width: 40%;
+		height: 18.5em;
+		overflow: scroll;
 	}
 	
 	article section h2 {
@@ -269,6 +325,36 @@ footer a {
 	
 	article section p {
 		font-size: 0.8em;
+	}
+	
+	form {
+		width: 80%;
+		height: 25em;
+		margin-bottom: 1em;
+	}
+	
+	legend {
+		float: left;
+		margin-bottom: 0.5em;
+		font-size: 2em;
+	}
+	
+	label, input {
+		clear: left;
+	}
+	
+	label {
+		text-align: left;
+		font-size: 0.7em;
+	}
+	
+	input {
+		float: left;
+		height: 2em;
+	}
+	
+	#submit:hover {
+		box-shadow: none;
 	}
 	
 	.grid div a {
