@@ -58,12 +58,64 @@ img {
 	text-shadow: none;
 }
 
+/* Header nav style rules + hamburger */
+
+#hamburger-nav {
+	list-style: none;
+	width: 65%;
+}
+
+#hamburger-nav li {
+	display: inline-block;
+	padding: 0 0.2em;
+}
+
+#hamburger-nav li a {
+	text-decoration: none;
+	color: #325b32;
+}
+
+#hamburger-nav li a:hover {
+	color: #ebeceb;
+}
+
+#hamburger {
+	display: none;
+	float: right;
+	margin: 4.5em;
+}
+
+.bar {
+    display: block;
+    width: 30px;
+    height: 5px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #2f6f5e;
+}
+
+.drop-link {
+	display: none;
+	border: 10px solid #ebeceb;
+	padding: 0;
+	position: absolute;
+	text-shadow: none;
+	background-color: #a9dea9;
+	font-size: 0.6em;
+}
+
+header>ul>li:hover>ul {
+	display: block;
+}
+
 /* Nav Style Rules */
 nav {
 	background-color: #2f6f5e;
 	clear: both;
 	border: 10px solid #ebeceb;
 	border-bottom-style: none;
+	padding: 1.75em;
 }
 
 nav ul {
@@ -71,6 +123,15 @@ nav ul {
 	margin: 0;
 	text-align: center;
 	padding: 0;
+	display: none;
+}
+
+#padding-change {
+	padding: 1.75em;
+}
+
+#hamburger-display {
+	display: none;
 }
 
 nav li {
@@ -297,14 +358,23 @@ footer a {
 		background-color: #a9dea9;
 		text-shadow: 3px 3px 8px #48af89;
 	}
-		
+	
+	#hamburger-nav {
+		display: none;
+	}
+	
+	#hamburger {
+		display: block;
+		cursor: pointer;
+	}
+	
 	/* Nav Style Rules for Tablets */
 	nav {
 		font-size: 0.85em;
 	}
 	
 	nav li {
-		border: none;	
+		border: none;
 	}
 		
 	nav li a:hover {
@@ -408,10 +478,23 @@ footer a {
 		text-align: center;
 	}
 	
+	#hamburger {
+		float: none;
+	}
+	
+	.bar {
+		height: 5px;
+		width: 30px;
+	}
+	
 	/* Nav Style Rules for Mobile */
 	nav li {
 		display: block;
 		border-top: 10px solid #ebeceb;
+	}
+	
+	nav li:first-child {
+		border-top-style: none;
 	}
 	
 	nav {
@@ -485,3 +568,27 @@ footer a {
 	}
 	
 }
+
+
+/*
+
+▒▒▒▒▒▒▒▓
+▒▒▒▒▒▒▒▓▓▓
+▒▓▓▓▓▓▓░░░▓
+▒▓░░░░▓░░░░▓
+▓░░░░░░▓░▓░▓
+▓░░░░░░▓░░░▓
+▓░░▓░░░▓▓▓▓
+▒▓░░░░▓▒▒▒▒▓
+▒▒▓▓▓▓▒▒▒▒▒▓
+▒▒▒▒▒▒▒▒▓▓▓▓
+▒▒▒▒▒▓▓▓▒▒▒▒▓
+▒▒▒▒▓▒▒▒▒▒▒▒▒▓
+▒▒▒▓▒▒▒▒▒▒▒▒▒▓
+▒▒▓▒▒▒▒▒▒▒▒▒▒▒▓
+▒▓▒▓▒▒▒▒▒▒▒▒▒▓
+▒▓▒▓▓▓▓▓▓▓▓▓▓
+▒▓▒▒▒▒▒▒▒▓
+▒▒▓▒▒▒▒▒▓
+
+*/
