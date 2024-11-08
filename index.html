@@ -16,11 +16,38 @@
 <body>
     <header>
 		<a href="index.html"><h1 class="page-logo">CIST1510</h1></a>
-		<h1 class="page-header">Gabriel Lordi-Vado's Domain</h1>
+		<ul class="page-header" id="hamburger-nav">
+			<li><a href="#">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#form">Contact</a></li>
+			<li><a href="">Classes</a>
+				<ul class="drop-link">
+					<li><a href="./chap1/index.html">Chapter 1</a></li>
+					<li><a href="./chap2/index.html">Chapter 2</a></li>
+					<li><a href="./chap3/index.html">Chapter 3</a></li>
+					<li><a href="./chap4/index.html">Chapter 4</a></li>
+					<li><a href="./chap5/index.html">Chapter 5</a></li>
+					<li><a href="./chap6/index.html">Chapter 6</a></li>
+					<li><a href="./chap7/index.html">Chapter 7</a></li>
+					<li><a href="./chap8/index.html">Chapter 8</a></li>
+					<li><a href="./chap9/index.html">Chapter 9</a></li>
+					<li><a href="./chap10/index.html">Chapter 10</a></li>
+					<li><a href="./chap11/index.html">Chapter 11</a></li>
+					<li><a href="./chap12/index.html">Chapter 12</a></li>
+				</ul>
+			</li>
+		</ul>
+		
+		<div id="hamburger" onclick="hamburger()">
+			<span class="bar"></span>
+			<span class="bar"></span>
+			<span class="bar"></span>
+		</div>
     </header>
     
-    <nav>
-        <ul>
+    <nav id="padding-change">
+		<!-- Using the style attribute since the script.js file doesnt play nice with my CSS apparently. -->
+        <ul id="hamburger-display" style="display: none;">
             <li><a href="./chap1/index.html">Chap1</a></li>
             <li><a href="./chap2/index.html">Chap2</a></li>
             <li><a href="./chap3/index.html">Chap3</a></li>
@@ -48,7 +75,7 @@
 			<p>Welcome to my webpage. This is where I submit my work for the Web Dev 1 <span id="course-name">CIST1510</span> class.</p>
 		</article>
 		
-		<article>
+		<article id="about">
 		
 			<figure>
 				<img src="./images/aboutme-image.png" alt="image of site owner">
@@ -93,5 +120,7 @@
         <p>You can contact me here:</p>
         <p><a href="mailto:glordiv9258@student.gwinnetttech.edu">glordiv9258@student.gwinnetttech.edu</a></p>
     </footer>
+	
+	<script src="./scripts/script.js"></script>
 </body>
 </html>
