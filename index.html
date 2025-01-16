@@ -1,126 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-	<!-- scans viewport for media queries -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- Links CSS style sheet-->
-	<link rel="stylesheet" href="./css/styles.css">
-	<!-- links fonts -->
-	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
-	<!-- Links favicon -->
-	<link rel="shortcut icon" href="./images/CIST1510ico.ico">
-	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
-    <title>CIST1510</title>
-</head>
-<body>
-    <header>
-		<a href="index.html"><h1 class="page-logo">CIST1510</h1></a>
-		<ul class="page-header" id="hamburger-nav">
-			<li><a href="#">Home</a></li>
-			<li><a href="#about">About</a></li>
-			<li><a href="#form">Contact</a></li>
-			<li><a href="">Classes</a>
-				<ul class="drop-link">
-					<li><a href="./chap1/index.html">Chapter 1</a></li>
-					<li><a href="./chap2/index.html">Chapter 2</a></li>
-					<li><a href="./chap3/index.html">Chapter 3</a></li>
-					<li><a href="./chap4/index.html">Chapter 4</a></li>
-					<li><a href="./chap5/index.html">Chapter 5</a></li>
-					<li><a href="./chap6/index.html">Chapter 6</a></li>
-					<li><a href="./chap7/index.html">Chapter 7</a></li>
-					<li><a href="./chap8/index.html">Chapter 8</a></li>
-					<li><a href="./chap9/index.html">Chapter 9</a></li>
-					<li><a href="./chap10/index.html">Chapter 10</a></li>
-					<li><a href="./chap11/index.html">Chapter 11</a></li>
-					<li><a href="./chap12/index.html">Chapter 12</a></li>
-				</ul>
-			</li>
-		</ul>
-		
-		<div id="hamburger" onclick="hamburger()">
-			<span class="bar"></span>
-			<span class="bar"></span>
-			<span class="bar"></span>
-		</div>
-    </header>
-    
-    <nav id="padding-change">
-		<!-- Using the style attribute since the script.js file doesnt play nice with my CSS apparently. -->
-        <ul id="hamburger-display" style="display: none;">
-            <li><a href="./chap1/index.html">Chap1</a></li>
-            <li><a href="./chap2/index.html">Chap2</a></li>
-            <li><a href="./chap3/index.html">Chap3</a></li>
-            <li><a href="./chap4/index.html">Chap4</a></li>
-            <li><a href="./chap5/index.html">Chap5</a></li>
-            <li><a href="./chap6/index.html">Chap6</a></li>
-            <li><a href="./chap7/index.html">Chap7</a></li>
-			<li><a href="./chap8/index.html">Chap8</a></li>
-			<li><a href="./chap9/index.html">Chap9</a></li>
-			<li><a href="./chap10/index.html">Chap10</a></li>
-			<li><a href="./chap11/index.html">Chap11</a></li>
-			<li><a href="./chap12/index.html">Chap12</a></li>
-        </ul>
-    </nav>
-
-    <!-- Used for diffrent banners -->
-	<!-- Images should be 1920x500 -->
-	<div class="hero desktop">
-		<img src="images/hello-world.PNG" alt="graphic of a window displaying >Hello, world!_">
-	</div>
-    
-    <main>
-	
-        <article>
-			<p>Welcome to my webpage. This is where I submit my work for the Web Dev 1 <span id="course-name">CIST1510</span> class.</p>
-		</article>
-		
-		<article id="about">
-		
-			<figure>
-				<img src="./images/aboutme-image.png" alt="image of site owner">
-			</figure>
-			
-			<section>
-				<h2>About Me!</h2>
-				<p>Hello! My name is Gabriel, I like drawing and video games.</p>
-				<p>I've always liked to mess around with programming and computer related things so I'm hoping to use the skills I learn in this class for personal use and a future career.</p>
-			</section>
-			
-		</article>
-		
-		<div id="form">
-			<form class="">
-				<fieldset>
-					<legend>Contact me!</legend>
-					
-					<label for="fName">First Name:</label><!-- First Name -->
-					<input id="fName" type="text" name="fName">
-					
-					<label for="lName">Last Name:</label><!-- Last Name -->
-					<input id="lName" type="text" name="lName">
-					
-					<label for="phone">Phone:</label><!-- Phone -->
-					<input id="phone" type="tel" name="phone">
-					
-					<label for="email">Email:</label><!-- Email -->
-					<input id="email" type="email" name="email">
-					
-					<label for="message">Leave me a message:</label>		<!-- Text-Area -->
-					<textarea id="message" name="message" rows="10" cols="74"></textarea>
-					
-					<input id="submit" class="btn" type="submit" value="Submit">
-				</fieldset>
-			</form>
-		</div>
-		
-    </main>
-
-    <footer>
-        <p>You can contact me here:</p>
-        <p><a href="mailto:glordiv9258@student.gwinnetttech.edu">glordiv9258@student.gwinnetttech.edu</a></p>
-    </footer>
-	
-	<script src="./scripts/script.js"></script>
-</body>
+<html>
+    <head>
+        <title>Joe Smith - Web Design & Development Site</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <header>
+            <h1  class="brand">Joe Smith</h1>
+            <h2  class="brand">Homepage</h2>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="classes/1510/index.html">CIST1510</a></li>
+                <li><a href="classes/1520/index.html">CIST1520</a></li>
+                <li><a href="classes/1530/index.html">CIST1530</a></li>
+                <li><a href="classes/1550/index.html">CIST1550</a></li>
+                <li><a href="classes/1560/index.html">CIST1560</a></li>
+                <li><a href="classes/2351/index.html">CIST2351</a></li>
+                <li><a href="classes/2510/index.html">CIST2510</a></li>
+                <li><a href="classes/2531/index.html">CIST2531</a></li>
+                <li><a href="classes/2550/index.html">CIST2550</a></li>
+                <li><a href="classes/2950/index.html">CIST2950</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div id="wrapper">
+                <h2>Web Design & Development Class List</h2>
+                <ul>
+                    <li>CIST1510 - Web Development I (HTML)</li>
+                    <li>CIST1520 - Scripting Technologies (JavaScript)</li>
+                    <li>CIST1530 - Web Graphics I (Photoshop)</li>
+                    <li>CIST1550 - Web Vector Graphics (Illustrator)</li>
+                    <li>CIST1560 - Web Graphics for Print (InDesign)</li>
+                    <li>CIST2351 - PHP Programming I (PHP)</li>
+                    <li>CIST2510 - Web Technologies (WordPress)</li>
+                    <li>CIST2531 - Web Graphics II</li>
+                    <li>CIST2550 - Web Development II (PHP)</li>
+                    <li>CIST2950 - Web Systems Project (Project Management)</li>
+                </ul>
+            </div>
+        </main>
+    </body>
 </html>

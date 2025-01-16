@@ -1,0 +1,109 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #8ac6e8;
+    padding: 0;
+    margin: 0;
+}
+header {
+    background-color: #0056b8;
+    padding: 2em
+}
+
+header .logo {
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+    color: white;
+}
+
+header .brand {
+    margin: 0 auto;
+    width: fit-content;
+    color: white;
+}
+
+nav {
+    background-color: black;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav li {
+    flex-grow: 1;
+    margin: auto auto;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 20px 10px;
+    display: block;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: lightgrey;
+    color: black;
+}
+
+#wrapper {
+    background-color: white;
+    padding: 2em;
+    width: 80%;
+    margin: 0 auto;
+}
+
+footer {
+    height: 100px;
+    width: 100%;
+    background-color: black;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-container div {
+    width: 100px;
+    height: 100px;
+    margin: 1em;
+    text-align: center;
+}
+
+.card-container a {
+    text-decoration: none;
+    color: black;
+    border: 3px solid black;
+    margin: 1em;
+    border-radius: 15px;
+    transition: border-radius 0.125s;
+}
+
+.card-container div .title {
+    padding-top: 10px;
+}
+
+.card-container div .arrow {
+    display: none;
+    font-weight: bolder;
+    font-size: 50;
+    margin: 0;
+}
+
+.card-container a:hover .arrow {
+    display: block;
+}
+
+.card-container a:hover {
+    border-radius: 0px;
+}
