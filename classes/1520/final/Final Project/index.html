@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--
+			Final Project
+			Author: Gabriel Lordi-Vado
+			Date: 4/2/2025
+			File Name: index.html
+		-->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="styles.css">
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
+		<script src="final_project.js" defer></script>
+		<link rel="shortcut icon" href="cookie.ico">
+		<link rel="icon" type="image/png" sizes="32x32" href="cookie.png">
+		<title>Girl Scout Cookies: Order Form</title>
+	</head>
+	
+	<body>
+	
+		<header>
+			<h1>Girl Scout Cookies Order Form</h1>
+		</header>
+		
+		<main>
+			<div>
+				<form id="cookieForm">
+					<fieldset id="accInfo">
+					
+						<legend>Account Info</legend>
+						
+						<div id="accLabels">
+						<label for="fName">First Name</label>
+						<input type="text" required id="fName" name="fName">
+						
+						<label for="lName">Last Name</label>
+						<input type="text" required id="lName" name="lName">
+						
+						<label for="streetAdr">Street</label>
+						<input type="text" required id="streetAdr" name="streetAdr">
+						
+						<label for="city">City</label>
+						<input type="text" required id="city" name="city">
+						
+						<label for="state">State</label>
+						<input type="text" required id="state" name="state" maxlength="2" minlength="2" size="2">
+						
+						<label for="zip">Zip Code</label>
+						<input type="text" required id="zip" name="zip" maxlength="5" minlength="5" size="5">
+						</div>
+						
+						<div id="shipButtons">
+						<label for="sameAddress">Use address for shipping</label>
+						<input type="radio" required id="sameAddress" name="addressChoice">
+						
+						<label for="difAddress">Use separate shipping address</label>
+						<input type="radio" id="difAddress" name="addressChoice">
+						</div>
+						
+					</fieldset>
+
+					<fieldset id="shipInfo">
+					
+						<legend>Shipping Information</legend>
+						
+						<label for="shipAdr">Street</label>
+						<input type="text" required id="shipAdr" name="shipAdr">
+						
+						<label for="shipCity">City</label>
+						<input type="text" required id="shipCity" name="shipCity">
+						
+						<label for="shipState">State</label>
+						<input type="text" required id="shipState" name="shipState" maxlength="2" minlength="2" size="2">
+						
+						<label for="shipZip">Zip Code</label>
+						<input type="text" required id="shipZip" name="shipZip" maxlength="5" minlength="5" size="5">
+						
+					</fieldset>
+
+					<fieldset id="cookieSelection">
+					
+						<legend>Cookies</legend>
+						
+						<div id="tm">
+						<img src="thinmint.png">
+						<label for="thinMints">Thin Mints:</label>
+						<input type="checkbox" id="thinMints" name="thinMints">
+						<label for="tmAmount">Quantity:</label>
+						<input type="text" id="tmAmount" name="tmAmount" maxlength="2" minlength="1" size="2">
+						</div>
+						
+						<div id="doSiDiv">
+						<img src="dosido.png">
+						<label for="doSi">Do Si Do's:</label>
+						<input type="checkbox" id="doSi" name="doSi">
+						<label for="doSiAmount">Quantity:</label>
+						<input type="text" id="doSiAmount" name="doSiAmount" maxlength="2" minlength="1" size="2">
+						</div>
+						
+						<div id="lc">
+						<img src="lemoncreme.png">
+						<label for="lemonCremes">Lemon Cremes:</label>
+						<input type="checkbox" id="lemonCremes" name="lemonCremes">
+						<label for="lcAmount">Quantity:</label>
+						<input type="text" id="lcAmount" name="lcAmount" maxlength="2" minlength="1" size="2">
+						</div>
+					
+						<div id="sd">
+						<img src="sanddollar.png">
+						<label for="sandDollars">Sand Dollars:</label>
+						<input type="checkbox" id="sandDollars" name="sandDollars">
+						<label for="sdAmount">Quantity:</label>
+						<input type="text" id="sdAmount" name="sdAmount" maxlength="2" minlength="1" size="2">
+						</div>
+						
+						<div id="cc">
+						<img src="chocolatechip.png">
+						<label for="chocoChip">Chocolate Chip:</label>
+						<input type="checkbox" id="chocoChip" name="chocoChip">
+						<label for="ccAmount">Quantity:</label>
+						<input type="text" id="ccAmount" name="ccAmount" maxlength="2" minlength="1" size="2">
+						</div>
+						
+					</fieldset>
+
+					<fieldset id="ordInfo">
+						
+						<legend>Order Info</legend>
+						
+						<textarea id="orderInfo" rows="15" cols="80"readonly></textarea>
+						<br><br>
+						<input type="submit" id="submit" value="Submit">
+						
+					</fieldset>
+				</form>
+			</div>
+		</main>
+	
+	</body>
+
+</html>

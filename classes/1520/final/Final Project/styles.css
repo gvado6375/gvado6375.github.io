@@ -1,0 +1,161 @@
+/*
+	Final Project
+	Author: Gabriel Lordi-Vado
+	Date: 4/2/2025
+	File Name: final_project.html
+*/
+
+/* CSS Reset */
+body, header, h1, main, form, input, label, textarea {
+	margin: 0;
+	padding: 0;
+}
+
+/* Change specified text field sizes as instructed */
+
+#state, #shipState {
+	width: 7%;
+}
+
+#cookieSelection input[type=text] {
+	width: 3%;
+	text-align: center;
+}
+
+#zip, #shipZip {
+	width: 10%;
+}
+
+/* Header Style */
+
+body {
+	background-color: #fff3fa;
+	font-family: "Oswald", system-ui;
+}
+
+header {
+	text-align: center;
+	font-size: 2em;
+	color: #f8fefd;
+	padding: 0.5em;
+	background-color: #3add91;
+	border: 20px solid #1bc392;
+}
+
+/* Form Fieldset Style Rules */
+
+fieldset {
+	border: 10px solid #1bc392;
+	background-color: #ddfaf5;
+}
+
+legend {
+	margin: auto;
+	border: 10px solid #1bc392;
+	font-size: 2em;
+	font-weight: bold;
+	background-color: #3add91;
+	color: #f8fefd;
+	padding: 0.2em;
+}
+
+#accInfo, #shipInfo {
+	text-align: center;
+}
+
+#accLabels label, #shipInfo label {
+	display: block;
+	font-size: 1.2em;
+	margin: 0.2em 0;
+}
+
+#accInfo input, #shipInfo input {
+	text-align: center;
+	font-size: 1em;
+}
+
+#shipButtons {
+	display: inline-block;
+	font-size: 1.2em;
+	margin-top: 0.2em;
+}
+
+#tm, #lc, #sd, #cc {
+	display: block;
+	padding: 1.2em;
+	font-size: 1.2em;
+	text-align: center;
+}
+
+#doSiDiv {
+	padding: 1.2em;
+	font-size: 1.2em;
+	text-align: center;
+}
+
+#cookieSelection input {
+	font-size: 0.8em;
+}
+
+#cookieSelection img {
+	width: 8%;
+	display: inline-block;
+}
+
+textarea {
+	text-align: center;
+	padding: 5em;
+	margin: 0 2em;
+	font-size: 1.2em;
+	overflow: hidden;
+}
+
+#submit {
+	border: 5px solid #1bc392;
+	background-color: #3add91;
+	color: #f8fefd;
+	font-size: 2em;
+	font-weight: bold;
+	margin: 0.2em;
+	padding: 0.2em;
+	border-radius: 15px;
+}
+
+#submit:hover {
+	border: 5px solid #1e9688;
+	background-color: #92e5d7;
+	color: black;
+}
+
+#submit:active {
+	color: #f8fefd;
+}
+
+/* Form section structure */
+
+#accInfo {
+	float: left;
+	margin: 2em;
+	padding: 1em;
+	width: 40%;
+}
+
+#shipInfo {
+	float: right;
+	margin: 2em;
+	padding: 1em 1em 10.6em;
+	width: 40%;
+}
+
+#cookieSelection {
+	clear: both;
+	margin: 2em auto;
+	width: 50%;
+}
+
+#ordInfo {
+	margin: auto;
+	margin-bottom: 2em;
+	width: 30%;
+	text-align: center;
+}
