@@ -1,0 +1,102 @@
+/*  Adobe Photoshop Creative Cloud Revealed, 2nd Edition
+	Chapter 2
+	Project Builder 1 & 2
+	
+	Filename: styles.css
+*/
+
+/* CSS Reset */
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+/* the main stuff we're here for */
+
+body {
+	background-image: linear-gradient(#58704b, #2d342a);
+}
+
+img {
+	border: 30px ridge #af8d34;
+}
+
+#h11 {
+	display: block;
+	text-align: center;
+	float: center;
+	margin-top: 1em;
+	font-size: 4em;
+	color: #e2ded8;
+}
+
+#h12 {
+	display: block;
+	text-align: center;
+	font-size: 4em;
+	color: #e2ded8;
+	margin-top: 1em;
+}
+
+#project1 img {
+	width: 50%;
+	float: center;
+	margin: auto;
+	display: block;
+	margin-top: 5em;
+}
+
+#project1 {
+	
+}
+
+#project2 img {
+	float: center;
+	display: block;
+	margin: auto;
+	width: 50%;
+	margin: 5em auto 5em auto;
+	clear: both;
+}
+
+#project2 {
+	display: block;
+}
+
+hr {
+	border-top: 1em dashed #e2ded8;
+	display: block;
+	margin: 2em;
+}
+
+#textbody {
+	border: 0.4em solid #f2d5a6;
+	display: block;
+	border-radius: 15px;
+	background-color: #f2d5a6;
+	color: #43595e;
+	font-weight: bold;
+	text-align: center;
+	font-size: 2em;
+}
+
+#border {
+	border: 0.3em solid #43595e;
+	border-radius: 20px;
+}
+
+#borderborder {
+	border: 0.4em solid #f2d5a6;
+	border-radius: 25px;
+	margin: 5em 20em 5em; 
+}
+
+#gif {
+	border: none;
+	margin: auto;
+	display: block;
+	margin-top: 50em;
+	/* border-right: 3.5em solid #f2d5a6 */
+}
