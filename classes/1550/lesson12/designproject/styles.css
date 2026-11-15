@@ -1,0 +1,67 @@
+/*  Adobe Photoshop Creative Cloud Revealed, 2nd Edition
+	Chapter 2
+	Project Builder 1 & 2
+	
+	Filename: styles.css
+*/
+
+/* CSS Reset */
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+/* the main stuff we're here for */
+
+body {
+	background-image: linear-gradient(#58704b, #2d342a);
+}
+
+img {
+	border: 30px ridge #af8d34;
+	display: block;
+	margin: 5em auto;
+	width: 40%;
+}
+
+h1 {
+	display: block;
+	text-align: center;
+	margin-top: 1em;
+	font-size: 4em;
+	color: #e2ded8;
+}
+
+/*
+#h12 {
+	display: block;
+	text-align: center;
+	float: right;
+	margin-top: 1em;
+	font-size: 4em;
+	color: #e2ded8;
+}
+
+#project1 img {
+	float: left;
+	display: block;
+	width: 35%;
+	margin: 5em;
+}
+
+#project1 {
+	display: block;
+}
+
+#project2 img {
+	float: right;
+	display: block;
+	width: 45%;
+	margin: 5em;
+}
+
+#project2 {
+	display: block;
+}
